@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+/*--------------------*/
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/gilroy-black.eot'); /* IE 9 Compatibility Mode */
+  src: url('./fonts/gilroy-black.eot?#iefix') format('embedded-opentype'),
+    /* IE < 9 */ url('./fonts/gilroy-black.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('./fonts/gilroy-black.woff') format('woff'),
+    /* Firefox >= 3.6, any other modern browser */
+      url('./fonts/gilroy-black.ttf') format('truetype'),
+    /* Safari, Android, iOS */ url('./fonts/gilroy-black.svg#gilroy-black')
+      format('svg'); /* Chrome < 4, Legacy iOS */
+
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  min-width: 320px;
+  position: relative;
+  overflow-x: hidden;
+  opacity: 1;
+  color: #fff;
+  background: #020006;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  height: 100vh;
+  padding: 0 60px;
+}
+
+.h2 {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 59px;
+}
+
+.p-main {
+  opacity: 0.8;
+}
+
+.h3 {
+  font-family: 'Gilroy';
+
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+@media only screen and (max-width: 450px) {
+  .container {
+    height: 100vh;
+    padding: 0 5%;
+  }
+}

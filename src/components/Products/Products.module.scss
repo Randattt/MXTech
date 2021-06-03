@@ -1,0 +1,113 @@
+.Products {
+  composes: container from '../../App.module.css';
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url(./img/light.svg) no-repeat 90% 20%,
+    url(./img/light2.svg) no-repeat 5% 90%;
+}
+
+.title {
+  composes: h2 from '../../App.module.css';
+  margin-bottom: 60px;
+}
+
+.container_left,
+.container_right {
+  // min-width: 940px;
+  position: relative;
+  > ul {
+    display: flex;
+    justify-content: space-between;
+
+    > li {
+      opacity: 0.8;
+      max-width: 266px;
+    }
+  }
+}
+
+.container_left {
+  max-width: 900px;
+  margin-bottom: 121px;
+}
+
+.container_right {
+  margin-left: 27%;
+  // max-width: 920px;
+}
+
+.item {
+  margin-right: 25px;
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.points {
+  position: absolute;
+  left: -60px;
+  top: -10px;
+}
+
+.points2 {
+  position: absolute;
+  left: 180px;
+  top: -8px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container_left {
+    max-width: 700px;
+  }
+  .container_left {
+    > ul {
+      > li {
+        max-width: 261px;
+      }
+    }
+  }
+  .title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Products {
+    margin-bottom: 100px;
+  }
+  .slogan {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .container_left,
+  .container_right {
+    // min-width: 940px;
+    position: relative;
+    > ul {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      > li {
+        opacity: 0.8;
+        max-width: 266px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .container_left {
+    max-width: 500px;
+    margin-bottom: 121px;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .Products {
+    margin-bottom: 200px;
+  }
+}

@@ -1,0 +1,23 @@
+<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.6">
+<circle opacity="0.4" cx="22" cy="22" r="14" fill="url(#paint0_radial)"/>
+<g opacity="0.2">
+<path d="M20.7059 0H23.2941V44H20.7059V0Z" fill="url(#paint1_radial)"/>
+<path d="M44 20.7059V23.2941L0 23.2941L1.13136e-07 20.7059L44 20.7059Z" fill="url(#paint2_radial)"/>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(22 22) rotate(90) scale(14)">
+<stop stop-color="#BA3EFF"/>
+<stop offset="1" stop-color="#2C5AF4" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(23.2941 22) rotate(-135.707) scale(18.5318 355.066)">
+<stop stop-color="#A400FF"/>
+<stop offset="0.90162" stop-color="#2C5AF4" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="paint2_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(23.2941 22) rotate(-135.707) scale(18.5318 355.066)">
+<stop stop-color="#A400FF"/>
+<stop offset="0.90162" stop-color="#2C5AF4" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>

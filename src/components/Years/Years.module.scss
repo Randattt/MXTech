@@ -1,0 +1,79 @@
+.Years {
+  composes: container from '../../App.module.css';
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.left {
+  max-width: 233px;
+  margin-right: 50px;
+}
+
+.title {
+  composes: h2 from '../../App.module.css';
+  margin-bottom: 20px;
+}
+
+.text {
+  composes: p-main from '../../App.module.css';
+}
+
+.img {
+  background: url('./img/bg.png') no-repeat center;
+  background-size: cover;
+  min-width: 626px;
+  min-height: 417px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .Years {
+    margin-bottom: 70px;
+  }
+  .title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .img {
+    min-width: 530px;
+    min-height: 353px;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  .Years {
+    height: 100%;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .left {
+    max-width: 100%;
+    margin-right: 50px;
+  }
+  .img {
+    min-height: 626px;
+    width: 100%;
+    order: -1;
+    margin-bottom: 40px;
+  }
+  .text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media only screen and (max-width: 663px) {
+  .img {
+    min-width: 320px;
+    min-height: 568px;
+  }
+}

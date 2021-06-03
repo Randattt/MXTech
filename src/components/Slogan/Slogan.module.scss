@@ -1,0 +1,49 @@
+.Slogan {
+  position: relative;
+  height: 100vh;
+  background: url('./img/bg.png') no-repeat center left;
+}
+.container {
+  composes: container from '../../App.module.css';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  composes: h2 from '../../App.module.css';
+}
+
+.slogan {
+  composes: p-main from '../../App.module.css';
+  max-width: 661px;
+}
+@media only screen and (max-width: 1200px) {
+  .container {
+    transform: none !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    align-items: flex-start;
+  }
+  .title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .slogan {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Slogan {
+    height: 100%;
+    margin-bottom: 150px;
+  }
+  .slogan {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

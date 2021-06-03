@@ -1,0 +1,69 @@
+.Welcome {
+  height: 100vh;
+  position: relative;
+  background: url('./img/bg.png') no-repeat center;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  composes: container from '../../App.module.css';
+}
+
+.title {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 59px;
+  max-width: 1052px;
+  margin-bottom: 8px;
+}
+
+.slogan {
+  opacity: 0.8;
+  margin-bottom: 42px;
+}
+
+.button {
+  background: linear-gradient(
+    90deg,
+    rgba(44, 90, 244, 0.8) 0%,
+    rgba(164, 0, 255, 0.8) 91.2%
+  );
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #fff;
+  padding: 10px 41px;
+  transition: 3s ease;
+  &:hover {
+    background: linear-gradient(
+      90deg,
+      #2c5af4 98.85%,
+      rgba(164, 0, 255, 0.8) 131.66%
+    );
+
+    transition: opacity 3s ease;
+  }
+}
+
+// MEDIA
+
+@media only screen and (max-width: 1024px) {
+  .title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Welcome {
+    padding: 0 5%;
+  }
+  .slogan {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

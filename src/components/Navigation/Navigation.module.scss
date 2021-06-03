@@ -1,0 +1,88 @@
+.Navigation {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  top: 30px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  // background: green;
+  padding: 0 60px;
+}
+
+.scrolled {
+  top: 0px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: #020006;
+}
+
+.logo {
+  font-family: 'Gilroy';
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 25px;
+  > span {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  min-width: 200px;
+}
+
+.item {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  transition: 3s ease-in-out;
+}
+
+.links {
+  color: #fff;
+  opacity: 0.8;
+
+  &:hover {
+    background: linear-gradient(90deg, #2c5af4 0%, #a400ff 91.2%),
+      linear-gradient(0deg, #ffffff, #ffffff);
+
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.burger {
+  display: none;
+  width: 40px;
+  height: 40px;
+  background: url(./img/burger.svg) no-repeat 0 -10px;
+  cursor: pointer;
+}
+
+.burgerOpen {
+  width: 40px;
+  height: 40px;
+  background: url(./img/x.svg) no-repeat 0 -10px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .Navigation {
+    top: 0px;
+    right: 0;
+    left: 0;
+    padding: 0 5%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background: #020006;
+  }
+  .list {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+}
